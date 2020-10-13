@@ -4,8 +4,12 @@
 }
 :root {
     --main-color: rgb(248, 230, 197);
+    --main-color-darkr: rgb(228, 186, 108);
     --scend-color: rgb(98, 158, 185);
     --scend-color-darkr:rgb(50, 80, 94);
+  }
+body{
+    font-display: auto;
   }
 /* nav bar */
 header{
@@ -41,11 +45,12 @@ h3{
 /* main */
 main{
     
-    background:rgb(98, 158, 185);
+    background: var(--scend-color);
     padding: 3rem;
     display: flex;
     justify-content: space-around;
-    
+    background: var(--scend-color);
+    height: 100vh;
 }
 .continar{
     border-radius: 1rem;
@@ -54,6 +59,7 @@ main{
     background-color: rgb(250, 230, 192);
     max-width: 450px;
     width: 85%;
+    height: 40vh;
 }
 .continar h3{
     text-align: center;
@@ -81,3 +87,50 @@ main{
     /* margin: 0 9.4rem; */
 }
 /* main */
+/* functional page  */
+
+.functional{
+    background :var(--scend-color);
+    padding: 3rem;
+    display: block;
+    text-align: center;
+    color: var(--main-color);
+    height: 100vh;
+}
+.titel{
+    margin: 1rem;
+    padding: 1rem;
+
+}
+.titel a{
+    width: max-content;
+    text-decoration: none;
+    color:  var(--scend-color-darkr);
+}
+.cont{
+    display: flex;
+    justify-content: center;
+}
+/* .reqest-joke{
+    margin:  1rem 0;
+    background:  var(--main-color-darkr);
+    border: none;
+    border-radius: 15rem;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}  */
+.reqest-joke button{
+    background:  var(--main-color-darkr);
+    border: none;
+    border-radius: 15rem;
+    width: 9rem;
+    margin:  1rem 0;
+
+}
+.joke-div{
+    background: linear-gradient(to right,rgb(65, 65, 107),rgb(219, 48, 48));
+}
+
+/* functional page  */
